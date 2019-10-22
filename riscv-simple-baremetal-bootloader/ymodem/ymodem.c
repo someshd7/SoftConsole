@@ -395,6 +395,7 @@ static int32_t receive_packet(uint8_t *data, int32_t *length)
                 return_val = -3; /* Signifies cancelled */
                 break;
             }
+            break;
             /* intentional fall through, CAN followed by not CAN is probably an
              * error on the line
              */

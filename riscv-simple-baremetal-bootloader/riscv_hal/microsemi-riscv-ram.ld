@@ -19,10 +19,10 @@ ENTRY(_start)
 
 MEMORY
 {
-    ram (rwx) : ORIGIN = 0x80000000, LENGTH = 64k
+    ram (rwx) : ORIGIN = 0x80010000, LENGTH = 64k
 }
 
-RAM_START_ADDRESS   = 0x80000000;       /* Must be the same value MEMORY region ram ORIGIN above. */
+RAM_START_ADDRESS   = 0x80010000;       /* Must be the same value MEMORY region ram ORIGIN above. */
 RAM_SIZE            = 64k;              /* Must be the same value MEMORY region ram LENGTH above. */
 STACK_SIZE          = 2k;               /* needs to be calculated for your application */             
 HEAP_SIZE           = 2k;               /* needs to be calculated for your application */
@@ -133,5 +133,5 @@ SECTIONS
     . += STACK_SIZE;
     __stack_top = .;
   } > ram
-}
+ }
 

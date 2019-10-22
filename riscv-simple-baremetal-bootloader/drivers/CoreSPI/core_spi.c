@@ -1,5 +1,5 @@
 /*******************************************************************************
- * (c) Copyright 2013-2017 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2013-2018 Microsemi SoC Products Group. All rights reserved.
  *
  * CoreSPI bare metal driver implementation for CoreSPI.
  *
@@ -7,8 +7,8 @@
  * SPI slave operations with the CoreSPI version 4.2.xxx It is not compatible
  * with CoreSPI version 3.0.xxx.
  *
- * SVN $Revision: 8934 $
- * SVN $Date: 2017-03-31 13:56:06 +0530 (Fri, 31 Mar 2017) $
+ * SVN $Revision: 9667 $
+ * SVN $Date: 2018-01-16 16:43:50 +0530 (Tue, 16 Jan 2018) $
  */
 
 #include "core_spi.h"

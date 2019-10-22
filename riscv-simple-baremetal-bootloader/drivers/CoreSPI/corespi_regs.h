@@ -1,10 +1,10 @@
 /*******************************************************************************
- * (c) Copyright 2011-2017 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2011-2018 Microsemi SoC Products Group. All rights reserved.
  * 
  * CoreSPI hardware registers definitions.
  *
- * SVN $Revision: 8934 $
- * SVN $Date: 2017-03-31 13:56:06 +0530 (Fri, 31 Mar 2017) $
+ * SVN $Revision: 9667 $
+ * SVN $Date: 2018-01-16 16:43:50 +0530 (Tue, 16 Jan 2018) $
  */
 #ifndef CORESPI_REGS_H_
 #define CORESPI_REGS_H_
