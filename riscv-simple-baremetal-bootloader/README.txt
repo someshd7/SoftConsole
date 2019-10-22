@@ -107,7 +107,7 @@ preprogrammed executable from FLASH to execution memory and start executing it.
 --------------------------------------------------------------------------------
 This example project is targeted at a SmartFusion2 M2S150 advanced development 
 kit design which has CoreTimer enabled. 
-The example project is built using a clock frequency of 72MHz. Trying to execute 
+The example project is built using a clock frequency of 50MHz. Trying to execute 
 this example project on a different design will result in incorrect baud rate 
 being used by CoreUART and timer load value.
 
