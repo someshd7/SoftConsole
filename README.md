@@ -4,7 +4,7 @@
 
 [SoftConsole](https://www.microsemi.com/products/fpga-soc/design-resources/design-software/softconsole) is Microsemi's free [Eclipse](https://www.eclipse.org/home/index.php)/[CDT](https://www.eclipse.org/cdt/) and [GNU MCU Eclipse](https://gnu-mcu-eclipse.github.io/) based Integrated Development Environment (IDE) provided as key part of the [Microsemi Mi-V Embedded Ecosystem](https://www.microsemi.com/products/fpga-soc/mi-v-ecosystem). SoftConsole supports development and debugging of [bare metal](https://en.wikipedia.org/wiki/Bare_machine) and [RTOS](https://en.wikipedia.org/wiki/Real-time_operating_system) based [RISC-V](https://riscv.org/) and [Arm Cortex-M](https://www.arm.com/products/processors/cortex-m) software in C, C++ and assembler using industry standard [GNU](https://www.gnu.org/) tools including [GCC](https://gcc.gnu.org/), [GDB](https://www.gnu.org/software/gdb/), [binutils](https://www.gnu.org/software/binutils/) running on Windows and Linux. SoftConsole supports embedded debugging over [JTAG](https://en.wikipedia.org/wiki/JTAG) using the [Microsemi FlashPro programmer](https://www.microsemi.com/products/fpga-soc/design-resources/programming-debug-tools) and [OpenOCD](http://openocd.org/).
 
-The current released version of SoftConsole is v5.2 and can be downloaded from [here](https://www.microsemi.com/products/fpga-soc/design-resources/design-software/softconsole#downloads).
+The latest released SoftConsole version can be downloaded from [here](https://www.microsemi.com/products/fpga-soc/design-resources/design-software/softconsole#downloads).
 Please read the SoftConsole release notes in full before installing and using it.
 
 ## Example projects
@@ -41,6 +41,7 @@ Alternatively git can be used from outside of SoftConsole and the projects impor
 
 ## Migrating from SoftConsole v5.1 to v5.2
 
+This section describes converting the SoftConsole applications from v5.1 to v5.2 or later. If you are using SoftConsole version 5.2 or later, this section can be ignored.
 SoftConsole v5.1 uses the [Roa Logic Eclipse Plugin for RISC-V GNU Toolchain](https://github.com/RoaLogic/riscv_gnu_eclipse) for RISC-V development support.
 SoftConsole v5.2 uses the [GNU MCU Eclipse plugins](https://gnu-mcu-eclipse.github.io/) for RISC-V and Cortex-M development support.
 Because different plugins are used, RISC-V projects from v5.1 are not compatible with v5.2 (and vice versa) and when opened all project properties will appear blank and the project will not build.
