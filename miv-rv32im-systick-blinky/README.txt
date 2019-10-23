@@ -64,7 +64,7 @@ configuration. This can be achieved by overwriting the content of this example
 project's "hw_platform.h" file with the correct data from your Libero design.
 
 An example design for SmartFusion2 150 Ad. Dev Kit is available at 
-https://github.com/RISCV-on-Microsemi-FPGA/M2S150-Advanced-Dev-Kit/tree/master/Libero/
+https://github.com/RISCV-on-Microsemi-FPGA/SmartFusion2-Advanced-Dev-Kit
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
                           Silicon revision dependencies
