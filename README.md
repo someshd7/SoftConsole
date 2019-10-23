@@ -39,9 +39,10 @@ The [EGit Eclipse plugin](https://www.eclipse.org/egit/) bundled with SoftConsol
 
 Alternatively git can be used from outside of SoftConsole and the projects imported into the workspace.
 
-## Migrating from SoftConsole v5.1 to v5.2
+## Migrating from SoftConsole v5.1 to v5.2 or later
 
 This section describes converting the SoftConsole applications from v5.1 to v5.2 or later. If you are using SoftConsole version 5.2 or later, this section can be ignored.
+
 SoftConsole v5.1 uses the [Roa Logic Eclipse Plugin for RISC-V GNU Toolchain](https://github.com/RoaLogic/riscv_gnu_eclipse) for RISC-V development support.
 SoftConsole v5.2 uses the [GNU MCU Eclipse plugins](https://gnu-mcu-eclipse.github.io/) for RISC-V and Cortex-M development support.
 Because different plugins are used, RISC-V projects from v5.1 are not compatible with v5.2 (and vice versa) and when opened all project properties will appear blank and the project will not build.
