@@ -12,7 +12,7 @@
 #ifndef HW_REG_ACCESS
 #define HW_REG_ACCESS
 
-#include "cpu_types.h"
+
 /***************************************************************************//**
  * HW_set_32bit_reg is used to write the content of a 32 bits wide peripheral
  * register.

@@ -5,8 +5,8 @@
  * @author Microsemi SoC Products Group
  * @brief Mi-V soft processor vectors, trap handling and startup code.
  *
- * SVN $Revision: 9947 $
- * SVN $Date: 2018-04-30 20:28:49 +0530 (Mon, 30 Apr 2018) $
+ * SVN $Revision: 9661 $
+ * SVN $Date: 2018-01-15 16:13:33 +0530 (Mon, 15 Jan 2018) $
  */
 #ifndef ENTRY_S
 #define ENTRY_S
@@ -41,7 +41,7 @@ handle_reset:
   csrwi mstatus, 0
   csrwi mie, 0
 
-/*Floating point support configuration*/
+/*Flaoting point support configuration*/
 
 #ifdef __riscv_flen
   csrr t0, mstatus

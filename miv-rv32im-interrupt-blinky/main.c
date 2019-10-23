@@ -1,5 +1,5 @@
 /*******************************************************************************
- * (c) Copyright 2016-2017 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2016-2019 Microsemi SoC Products Group. All rights reserved.
  * This SoftConsole example project demonstrates how to use the CoreTimer driver.
  * This example project also demonstrates how to configure PLIC to handle the 
  * external interrupts.

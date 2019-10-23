@@ -1,20 +1,19 @@
 /*******************************************************************************
- * (c) Copyright 2016-2017 Microsemi Corporation.  All rights reserved.
+ * (c) Copyright 2017-2018 Microsemi Corporation.  All rights reserved.
  *
- * Platform definitions
- * Version based on requirements of RISCV-HAL
+ * Platform definitions.
  *
- * SVN $Revision: 9546 $
- * SVN $Date: 2017-10-24 10:27:17 +0530 (Tue, 24 Oct 2017) $
+ * SVN $Revision: 9861 $
+ * SVN $Date: 2018-03-21 16:17:58 +0530 (Wed, 21 Mar 2018) $
  */
- /*=========================================================================*//**
-  @mainpage Sample file detailing how hw_platform.h should be constructed for 
-    the Mi-V processors.
+/*=========================================================================*//**
+  @mainpage Sample file detailing how hw_platform.h should be constructed for
+    the Mi-V processors
 
     @section intro_sec Introduction
-    The hw_platform.h is to be located in the project root directory.
-    Currently this file must be hand crafted when using the Mi-V Soft Processor.
-    
+    The  hw_platform.h is to be located in the project root directory.
+    Currently this file must be hand crafted when using the Mi-V Soft processor.
+
     You can use this file as sample.
     Rename this file from sample_hw_platform.h to hw_platform.h and store it in
     the root folder of your project. Then customize it per your HW design.
@@ -33,9 +32,8 @@
  * Soft-processor clock definition
  * This is the only clock brought over from the Mi-V Soft processor Libero design.
  */
-#ifndef SYS_CLK_FREQ 
-#define SYS_CLK_FREQ                    66000000UL
-#endif
+#define SYS_CLK_FREQ                    50000000UL
+
 /***************************************************************************//**
  * Non-memory Peripheral base addresses
  * Format of define is:
@@ -53,7 +51,7 @@
  * Peripheral Interrupts are mapped to the corresponding Mi-V Soft processor
  * interrupt from the Libero design.
  * There can be up to 31 external interrupts (IRQ[30:0] pins) on the Mi-V Soft
- * processor.The Mi-V Soft processor external interrupts are defined in the
+ * processor. The Mi-V Soft processor external interrupts are defined in the
  * riscv_plic.h
  * These are of the form
  * typedef enum
@@ -73,15 +71,19 @@
  * <corename>_<instance>_<core interrupt name>
  */
 
-#define TIMER0_IRQn                     External_30_IRQn
-#define TIMER1_IRQn                     External_31_IRQn
-
 /****************************************************************************
  * Baud value to achieve a 115200 baud rate with a 83MHz system clock.
  * This value is calculated using the following equation:
  *      BAUD_VALUE = (CLOCK / (16 * BAUD_RATE)) - 1
  *****************************************************************************/
-#define BAUD_VALUE_115200               (SYS_CLK_FREQ / (16 * 115200)) - 1
+#define BAUD_VALUE_115200               ((SYS_CLK_FREQ / (16 * 115200)) - 1)
+
+/******************************************************************************
+ * Baud value to achieve a 57600 baud rate with a 83MHz system clock.
+ * This value is calculated using the following equation:
+ *      BAUD_VALUE = (CLOCK / (16 * BAUD_RATE)) - 1
+ *****************************************************************************/
+ #define BAUD_VALUE_57600                ((SYS_CLK_FREQ / (16 * 57600)) - 1)
 
 /***************************************************************************//**
  * User edit section- Edit sections below if required
@@ -94,7 +96,6 @@
  * e.g. #define MSCC_STDIO_UART_BASE_ADDR COREUARTAPB1_BASE_ADDR
  */
 #define MSCC_STDIO_UART_BASE_ADDR COREUARTAPB0_BASE_ADDR
-
 #ifndef MSCC_STDIO_UART_BASE_ADDR
 #error MSCC_STDIO_UART_BASE_ADDR not defined- e.g. #define MSCC_STDIO_UART_BASE_ADDR COREUARTAPB1_BASE_ADDR
 #endif

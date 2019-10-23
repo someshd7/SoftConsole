@@ -1,5 +1,5 @@
 /*******************************************************************************
- * (c) Copyright 2016-2017 Microsemi SoC Products Group. All rights reserved.
+ * (c) Copyright 2016-2019 Microsemi SoC Products Group. All rights reserved.
  * 
  * This SoftConsole example project demonstrates how to configure and use the
  * MiV_RV32IM_L1_AHB system timer.
@@ -50,7 +50,6 @@ void SysTick_Handler(void) {
     gpout = gpout | g_state;
 
     GPIO_set_outputs(&g_gpio_out, gpout);
-    UART_polled_tx_string(&g_uart, (const uint8_t *)"tick\r\n");
 }
 
 /*-----------------------------------------------------------------------------
