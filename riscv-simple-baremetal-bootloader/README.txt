@@ -101,6 +101,12 @@ Copy the preloaded executable from SPI flash and execute it (DIP switch 8 --> ON
 --------------------------------------------------------------------------------
 Turning ON the DIP switch will bypass the bootloader application code, copy the 
 preprogrammed executable from FLASH to execution memory and start executing it.
+This assumes that the SPI flash already contains a valid executable. It will 
+be copied to the executable memory without doing any validity checks and start 
+executing it. 
+
+You also need to make sure that the clock frequency of your application matches
+that of the bootloader application / libero design combination.
 
 --------------------------------------------------------------------------------
                                 Target hardware
