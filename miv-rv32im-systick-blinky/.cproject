@@ -163,7 +163,7 @@
                             							
                             <tool id="ilg.gnumcueclipse.managedbuild.cross.riscv.tool.createflash.1183225084" name="GNU RISC-V Cross Create Flash Image" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.tool.createflash">
                                 								
-                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createflash.choice.554011365" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createflash.choice" useByScannerDiscovery="false" value="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createflash.choice.binary" valueType="enumerated"/>
+                                <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createflash.choice.554011365" name="Output file format (-O)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createflash.choice" useByScannerDiscovery="false" value="ilg.gnumcueclipse.managedbuild.cross.riscv.option.createflash.choice.binary" valueType="enumerated"/>
                                 							
                             </tool>
                             							
@@ -279,7 +279,7 @@
                             							
                             <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.target.isa.atomic.3541389" name="Atomic extension (RVA)" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.target.isa.atomic" useByScannerDiscovery="false" value="false" valueType="boolean"/>
                             							
-                            <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.toolchain.id.1344697934" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.toolchain.id" value="-2032619395" valueType="string"/>
+                            <option id="ilg.gnumcueclipse.managedbuild.cross.riscv.option.toolchain.id.1344697934" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.option.toolchain.id" useByScannerDiscovery="false" value="-2032619395" valueType="string"/>
                             							
                             <targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="ilg.gnumcueclipse.managedbuild.cross.riscv.targetPlatform.2031024620" isAbstract="false" osList="all" superClass="ilg.gnumcueclipse.managedbuild.cross.riscv.targetPlatform"/>
                             							
